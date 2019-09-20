@@ -9,6 +9,7 @@ var merge = require('merge-stream');
 var clean = require('gulp-clean');
 var cssnano = require('gulp-cssnano');
 var concat = require('gulp-concat');
+var minify = require('gulp-minify');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var fileinclude = require('gulp-file-include');
@@ -52,11 +53,15 @@ gulp.task('cssOptimize',['sass'],function(){
 gulp.task('jsOptimize', function(){
     return gulp.src([
         vendorpath + 'jquery/dist/jquery.js',
+        vendorpath + 'jquery-nice-select/js/jquery.nice-select.js',
+        vendorpath + 'datatables.net/js/jquery.dataTables.js',
+        vendorpath + 'datatables.net-bs4/js/dataTables.bootstrap4.js',
+        
         vendorpath + 'slick-carousel/slick/slick.js',
         'app/js/main.js'
     ])
-    .pipe(concat('all.min.js'))
-    .pipe(uglify())
+    .pipe(concat('all.js'))
+    .pipe(minify())
     .pipe(gulp.dest('.tmp/js'));
 });
 
@@ -113,10 +118,13 @@ gulp.task('deploy',['cleanBuild'], function(){
     var jsOptimize = gulp.src([
         vendorpath + 'jquery/dist/jquery.js',
         vendorpath + 'slick-carousel/slick/slick.js',
+        vendorpath + 'datatables.net/js/jquery.dataTables.js',
+        vendorpath + 'datatables.net-bs4/js/dataTables.bootstrap4.js',
+        vendorpath + 'jquery-nice-select/js/jquery.nice-select.js',
         'app/js/main.js'
     ])
-    .pipe(concat('all.min.js'))
-    .pipe(uglify())
+    .pipe(concat('all.js'))
+    .pipe(minify())
     .pipe(gulp.dest('build/js'));
     // optimasi image
     var imgOptimize = gulp.src('app/images/*')

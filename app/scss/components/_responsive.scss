@@ -1,0 +1,99 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .menu-bars{
+        display: block;
+    }
+    .navbar-expand-xl > .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-content{
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        width: 300px;
+        background: #fff;
+        transition: left .3s ease;
+        .navbar-nav {
+            margin-left: 0;
+            .nav-item{
+                margin-right: 0;
+                .nav-link{
+                    color: #01313c !important;
+                    &.active{
+                        background: #f2f2f2;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        &.show{
+            left: 0;
+            z-index: 99;
+        }
+    }
+    .menu-overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba($color: #000000, $alpha: 0.4);
+    }
+    .table-responsive{
+        width: 100%;
+        .col-sm-12{
+            overflow: scroll;
+            overflow-y: hidden; 
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .container-login {
+        width: 100%;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .container-login {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        border-radius: 0;
+        overflow-y: scroll;
+    }
+    .login-img{
+        height: 200px;
+        background-size: cover;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center;
+    }
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .navbar-expand-xl > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo {
+        width: 128px;
+        height: 39px;
+    }
+    .name{
+        display: none;
+    }
+    .nav-content {
+        width: 260px;
+    }
+}
+
