@@ -1,0 +1,34 @@
+{
+  "name": "SiakadFront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.18.2",
+    "browsersync": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^2.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "jquery": "^3.4.1",
+    "merge-stream": "^1.0.1",
+    "popper.js": "^1.15.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
