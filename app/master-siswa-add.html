@@ -1,0 +1,99 @@
+@@include('./components/_head.html')
+@@include('./components/_header.html', {"masterActive": "active"})
+
+<div class="banner-head">
+   
+</div>
+
+<div class="content">
+    <div class="container title-heading mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title">Tambah Data Siswa</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="master-siswa.html">Data Siswa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tambah Data Siswa</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- <div class="col-md-6 text-right">
+                <a href="#" class="btn btn-success px-4">Tambah Siswa</a>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-inner">
+            <h3 class="title-20 mb-4">Data Siswa</h3>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>NIS</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Tempat, Tgl Lahir</label>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Kota lahir">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" data-provide="datepicker" class="form-control datepicker" placeholder="Tanggal Lahir">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <select class="w-100">
+                                <option value="laki-laki">Laki-laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Agama</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>No Telepon</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Golongan Darah</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Ayah</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Ibu</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group text-right mt-5">
+                            <button class="btn btn-success pl-5 pr-5">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@@include('./components/_footer.html')
+@@include('./components/_foot.html')

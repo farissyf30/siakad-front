@@ -12,6 +12,7 @@
     "@babel/core": "^7.6.0",
     "@fortawesome/fontawesome-free": "^5.11.1",
     "bootstrap": "^4.3.1",
+    "bootstrap-datepicker": "^1.9.0",
     "browser-sync": "^2.18.2",
     "browsersync": "0.0.1-security",
     "datatables.net-bs4": "^1.10.19",

@@ -7,29 +7,38 @@
         <div class="collapse navbar-collapse nav-content">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link active" href="#">Dashboard</a>
+                    <a class="nav-link @@homeActive" href="index.html">Dashboard</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle @@masterActive" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Data Master
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="master-siswa.html">Data Siswa</a>
+                        <a class="dropdown-item" href="master-guru.html">Data Guru</a>
+                        <a class="dropdown-item" href="master-kelas.html">Data Kelas</a>
+                        <a class="dropdown-item" href="master-jam.html">Data Jam</a>
+                        <a class="dropdown-item" href="master-pelajaran.html">Data Mata Pelajaran</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Data Akademik
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="list-jadual.html">Jadual</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Absensi</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Kelas 10</a></li>
+                                <li><a class="dropdown-item" href="#">Kelas 11</a></li>
+                                <li><a class="dropdown-item" href="#">Kelas 12</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link @@pengumumanActive" href="pengumuman.html">Pengumuman</a>
                 </li>
             </ul>
 

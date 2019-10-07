@@ -53,6 +53,9 @@ gulp.task('cssOptimize',['sass'],function(){
 gulp.task('jsOptimize', function(){
     return gulp.src([
         vendorpath + 'jquery/dist/jquery.js',
+        vendorpath + 'popper.js/dist/umd/popper.js',
+        vendorpath + 'bootstrap/dist/js/bootstrap.js',
+        vendorpath + 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
         vendorpath + 'jquery-nice-select/js/jquery.nice-select.js',
         vendorpath + 'datatables.net/js/jquery.dataTables.js',
         vendorpath + 'datatables.net-bs4/js/dataTables.bootstrap4.js',
@@ -117,6 +120,9 @@ gulp.task('deploy',['cleanBuild'], function(){
 // menggabung semua file js dan optimasi
     var jsOptimize = gulp.src([
         vendorpath + 'jquery/dist/jquery.js',
+        vendorpath + 'popper.js/dist/umd/popper.js',
+        vendorpath + 'bootstrap/dist/js/bootstrap.js',
+        vendorpath + 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
         vendorpath + 'slick-carousel/slick/slick.js',
         vendorpath + 'datatables.net/js/jquery.dataTables.js',
         vendorpath + 'datatables.net-bs4/js/dataTables.bootstrap4.js',
